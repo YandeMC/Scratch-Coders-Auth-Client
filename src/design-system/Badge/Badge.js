@@ -33,7 +33,7 @@ const Badge = styled('span', {
 
     // Custom
     backgroundColor: '$neutral3',
-    borderRadius: '$pill',
+    borderRadius: '1rem 0.5rem',
     color: '$neutral11',
     whiteSpace: 'nowrap',
     fontVariantNumeric: 'tabular-nums',

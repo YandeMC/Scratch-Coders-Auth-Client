@@ -7,7 +7,7 @@ const SCROLLBAR_SIZE = 10;
 const StyledScrollArea = styled(ScrollAreaPrimitive.Root, {
     width: 200,
     height: 225,
-    borderRadius: 4,
+    borderRadius: '1rem 0.5rem',
     overflow: 'hidden',
     boxShadow: `0 2px 10px $colors$neutral7`,
 });

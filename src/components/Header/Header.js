@@ -38,57 +38,7 @@ const STCensorNotice = styled(Flex, {
     color: '$loContrast',
 });
 
-function QuestionnaireBanner({ dismiss }) {
-    return (
-        <Box css={{ position: 'relative', backgroundColor: '$accent10', color: '$loContrast', overflow: 'hidden' }}>
-            <Flex direction="column" css={{ p: '$4', '@bp2': { mr: '25rem' } }}>
-                <Heading as="h3" size="3" css={{ color: 'inherit', mb: '$2' }}>
-                    Questionnaire - Scratch Game Jams
-                </Heading>
-                <Text css={{ color: 'inherit', fontSize: '$6', lineHeight: 1.3, mb: '$4' }}>
-                    Imagine a platform where Scratchers could create and participate in game jams (competitions), with podiums, deadlines, teams and more! Would you be interested in such a platform?{' '}
-                    <Box as="span" css={{ fontWeight: '$bold' }}>
-                        Let us know by filling out our 2-minute questionnaire!
-                    </Box>
-                </Text>
-                <Flex css={{ mb: '$2' }}>
-                    <Button as="a" href="https://forms.gle/K11UXQHXwCDE9zVSA" target="_blank" variant="accent" css={{ mr: '$4' }}>
-                        Fill out the form
-                        <Box css={{ ml: '$1' }}>
-                            <OpenInNewWindowIcon width={24} height={24} />
-                        </Box>
-                    </Button>
-                    <Text
-                        onClick={dismiss}
-                        css={{ height: '$7', color: 'inherit', fontWeight: '$medium', display: 'inline-flex', alignItems: 'center', cursor: 'pointer', '&:hover': { opacity: 0.9 } }}
-                    >
-                        Dismiss banner
-                    </Text>
-                </Flex>
-            </Flex>
-            <Box
-                as="img"
-                src="/scratchblocks.png"
-                css={{
-                    position: 'absolute',
-                    top: 0,
-                    right: 0,
-                    height: '30rem',
-                    transform: 'translate(-30%, -10%) rotate(15deg)',
-                    mixBlendMode: 'luminosity',
-                    animation: 'none',
-                    display: 'none',
-                    '@bp2': {
-                        display: 'block',
-                    },
-                    '@bp3': {
-                        animation: `20s ease-in-out infinite alternate ${questionnaireBannerAnimation}`,
-                    },
-                }}
-            ></Box>
-        </Box>
-    );
-}
+
 
 function Header({ withSecondaryHeader, secondaryHeader }) {
     const { accounts, error: accountError, mutateAccounts } = useAccounts();
@@ -189,13 +139,9 @@ function Header({ withSecondaryHeader, secondaryHeader }) {
                     </Box>
                 </NextLink>
                 <Flex as="nav" css={{ ai: 'center' }}>
-                    <NextLink href="/documentation/introduction" passHref>
-                        <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$7' } }}>
-                            <Text>Documentation</Text>
-                        </Link>
-                    </NextLink>
+                  
                     <Link
-                        href="https://github.com/Looky1173/Scratch-Auth-Client"
+                        href="https://github.com/YandeMC/Scratch-Coders-Auth-Client"
                         variant="subtle"
                         css={{
                             mr: '$5',
@@ -252,7 +198,7 @@ function Header({ withSecondaryHeader, secondaryHeader }) {
                             <PopoverTrigger asChild>
                                 <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$7' } }}>
                                     <Text as="div" css={{ display: 'inline-flex' }}>
-                                        Your accounts
+                                        Accounts
                                         <Box css={{ ml: '$1' }}>
                                             <ChevronDownIcon width={18} height={18} />
                                         </Box>
@@ -263,7 +209,7 @@ function Header({ withSecondaryHeader, secondaryHeader }) {
                                 <Flex direction="column" css={{ gap: 10 }}>
                                     <Flex align="center" justify="between">
                                         <Heading as="h2" css={{ mb: '$1', color: '$neutral11' }}>
-                                            Your One Click Sign In Accounts
+                                            Your Accounts
                                         </Heading>
                                     </Flex>
                                     {accounts.accounts !== null &&

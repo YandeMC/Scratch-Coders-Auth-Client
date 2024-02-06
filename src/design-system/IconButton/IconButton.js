@@ -47,22 +47,22 @@ const IconButton = styled('button', {
     variants: {
         size: {
             1: {
-                borderRadius: '$1',
+                borderRadius: '1rem 0.5rem',
                 height: '$5',
                 width: '$5',
             },
             2: {
-                borderRadius: '$2',
+                borderRadius: '1rem 0.5rem',
                 height: '$6',
                 width: '$6',
             },
             3: {
-                borderRadius: '$2',
+                borderRadius: '1rem 0.5rem',
                 height: '$7',
                 width: '$7',
             },
             4: {
-                borderRadius: '$3',
+                borderRadius: '1rem 0.5rem',
                 height: '$8',
                 width: '$8',
             },

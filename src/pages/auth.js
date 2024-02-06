@@ -25,6 +25,7 @@ import { useToast, useAccounts } from '@hooks';
 import NextLink from 'next/link';
 
 const OptionCard = styled(Card, {
+    borderRadius: "1rem 0.5rem",
     p: '$4',
     position: 'relative',
     cursor: 'pointer',
@@ -555,24 +556,9 @@ export default function Auth() {
                                     setHasChosenAuthMethod(true);
                                     setAuthenticationMethod('cloud');
                                 }}
-                                disabled={true || loadingOneClickSignIn}
+                                
                             >
-                                <Box
-                                    css={{
-                                        position: 'absolute',
-                                        right: '-1em',
-                                        top: '-0.5em',
-                                        borderRadius: '$pill',
-                                        backgroundColor: '$danger10',
-                                        color: '$loContrast',
-                                        textTransform: 'uppercase',
-                                        fontWeight: '$bold',
-                                        fontSize: '$2',
-                                        px: '$2',
-                                    }}
-                                >
-                                    temporarily disabled
-                                </Box>
+                              
                                 <Heading as="h3" css={{ color: 'inherit' }}>
                                     Cloud data
                                 </Heading>
@@ -587,24 +573,9 @@ export default function Auth() {
                                     setHasChosenAuthMethod(true);
                                     setAuthenticationMethod('comment');
                                 }}
-                                disabled={true || loadingOneClickSignIn}
+                                
                             >
-                                <Box
-                                    css={{
-                                        position: 'absolute',
-                                        right: '-1em',
-                                        top: '-0.5em',
-                                        borderRadius: '$pill',
-                                        backgroundColor: '$danger10',
-                                        color: '$loContrast',
-                                        textTransform: 'uppercase',
-                                        fontWeight: '$bold',
-                                        fontSize: '$2',
-                                        px: '$2',
-                                    }}
-                                >
-                                    temporarily disabled
-                                </Box>
+                                
                                 <Heading as="h3" css={{ color: 'inherit' }}>
                                     Project comments
                                 </Heading>
@@ -908,7 +879,7 @@ export default function Auth() {
                     </Box>
                 )}
                 <Flex css={{ justifyContent: 'center', mt: '$8' }}>
-                    <Button as="a" target="_blank" href="https://scratch.mit.edu/discuss/topic/705721/?page=1#post-7459826">
+                    <Button as="a" target="_blank" href="https://discord.com/channels/1141222489582735360/1201712068915372122">
                         Report an issue
                         <Box css={{ ml: '$2' }}>
                             <OpenInNewWindowIcon width={20} height={20} />

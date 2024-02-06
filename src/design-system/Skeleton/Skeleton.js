@@ -18,7 +18,7 @@ const SkeletonSpan = styled('span', {
 
     backgroundColor: 'var(--base-color)',
     width: '100%',
-    borderRadius: '$4',
+    borderRadius: '1rem 0.5rem',
     display: 'inline-flex',
     lineHeight: 1,
     position: 'relative',

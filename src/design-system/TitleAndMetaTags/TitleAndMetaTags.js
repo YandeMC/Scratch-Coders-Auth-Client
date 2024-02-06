@@ -3,15 +3,14 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const TitleAndMetaTags = ({
-    url = 'https://stitches.dev',
+    url = 'https://oauth.fly.dev',
     pathname,
-    title = 'Stitches',
-    description = 'CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience, by Modulz.',
-    poster,
+    title = 'Scratch Coders OAuth',
+    description = 'description',
 }) => {
     const router = useRouter();
 
-    const image = poster ? `${url}/${poster}` : `${url}/social.png`;
+    const image = `${url}/icon.png`;
     const path = pathname || router.pathname;
 
     return (

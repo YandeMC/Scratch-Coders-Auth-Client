@@ -78,12 +78,12 @@ const Button = styled('button', {
         },
         size: {
             small: {
-                borderRadius: '$2',
+                borderRadius: '1rem 0.5rem',
                 height: '$5',
                 px: '$2',
             },
             base: {
-                borderRadius: '9999px',
+                borderRadius: '1rem 0.5rem',
                 height: '$7',
                 px: '$4',
             },

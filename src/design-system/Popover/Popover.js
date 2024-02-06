@@ -22,7 +22,7 @@ const slideLeftAndFade = keyframes({
 });
 
 const StyledContent = styled(PopoverPrimitive.Content, {
-    borderRadius: 4,
+    borderRadius: '1rem 0.5rem',
     padding: 20,
     width: 260,
     backgroundColor: '$colors$card2',

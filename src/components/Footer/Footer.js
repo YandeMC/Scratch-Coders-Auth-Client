@@ -6,7 +6,7 @@ import { OpenInNewWindowIcon } from '@radix-ui/react-icons';
 const Footer = () => {
     return (
         <Box css={{ pb: '$8' }}>
-            <Separator size={2} css={{ mx: 'auto', my: '$8' }} />
+         
             <Container size={2} css={{ maxWidth: '1090px' }}>
                 <Grid
                     css={{
@@ -27,94 +27,9 @@ const Footer = () => {
                             </Link>
                         </NextLink>
 
-                        <Text as="span" size={3} css={{ ml: 'auto', mt: 0, '@bp2': { ml: 0, mt: 'auto' }, color: '$neutral11', lineHeight: '0', userSelect: 'none' }}>
-                            &copy; Scratch Auth {'2022 - ' + new Date().getFullYear()}
-                        </Text>
+                      
                     </Flex>
-                    <Box>
-                        <Heading as="h6" bold>
-                            Scratch Auth
-                        </Heading>
-                        <ul>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <NextLink href="/" passHref>
-                                        <Link variant="subtle">Home</Link>
-                                    </NextLink>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <NextLink href="/documentation/about" passHref>
-                                        <Link variant="subtle">About</Link>
-                                    </NextLink>
-                                </Text>
-                            </li>
-                        </ul>
-                    </Box>
-                    <Box>
-                        <Heading as="h6" bold>
-                            Resources
-                        </Heading>
-                        <ul>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <NextLink href="/documentation/introduction" passHref>
-                                        <Link variant="subtle">Documentation</Link>
-                                    </NextLink>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://scratch.mit.edu/discuss/topic/705721/" css={{ display: 'inline-flex' }}>
-                                        Forum topic <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://stats.uptimerobot.com/4Ggz4Fzo2O" css={{ display: 'inline-flex' }}>
-                                        Status page <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                        </ul>
-                    </Box>
-                    <Box>
-                        <Heading as="h6" bold>
-                            Community
-                        </Heading>
-                        <ul>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://beta.itinerary.eu.org" css={{ display: 'inline-flex' }}>
-                                        Incubator <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://itinerary.eu.org" css={{ display: 'inline-flex' }}>
-                                        Itinerary <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://scratchtools.edu.eu.org" css={{ display: 'inline-flex' }}>
-                                        Scratch Tools <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                            <li>
-                                <Text as="p" size={4} css={{ mt: '$3', lineHeight: '1' }}>
-                                    <Link variant="subtle" target="_blank" href="https://scratch.mit.edu/users/Looky1173/#comments" css={{ display: 'inline-flex' }}>
-                                        Feedback <OpenInNewWindowIcon width={15} height={15} />
-                                    </Link>
-                                </Text>
-                            </li>
-                        </ul>
-                    </Box>
+                   
                 </Grid>
             </Container>
         </Box>
